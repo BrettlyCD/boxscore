@@ -26,8 +26,8 @@ reach me on Twitter [@brettlyCD] (https://twitter.com/brettlyCD)
 
 ## Acknowledgements
 
-Drew Hynes (https://gitlab.com/dword4/nhlapi)- built amazing documents on the
+Drew Hynes (https://gitlab.com/dword4/nhlapi) - built amazing documents on the
 NHL API
 
-Tyler Hillsman (http://www.pennantapp.com)- created the Pennant app and
+Tyler Hillsman (http://www.pennantapp.com) - created the Pennant app and
 inspired me with what is possible with sports data
