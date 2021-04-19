@@ -31,3 +31,7 @@ NHL API
 
 Tyler Hillsman (http://www.pennantapp.com) - created the Pennant app and
 inspired me with what is possible with sports data
+
+## Disclosure
+
+All data is collected from open sources. Ultimately, all information belongs to the respected leagues of play. This project is not to capitalize on or gain monetary value from this data. Just to create a fun resource.
