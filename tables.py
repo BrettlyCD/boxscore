@@ -2,9 +2,8 @@
 
 import requests as rq
 import pandas as pd
-from json import loads
 
-###confernce table
+###conference table
 response = rq.get("https://statsapi.web.nhl.com/api/v1/conferences")
 conferences = pd.json_normalize(response.json()["conferences"]).set_index("id")
 conferences.rename_axis("conferenceID", inplace = True)
@@ -30,3 +29,4 @@ last = pd.json_normalize(response.json()['teams'], record_path = ['previousGameS
 home_key = last[['teams.home.team.id', 'gamePk']].rename(columns = {"teams.home.team.id": "teamID", "gamePk": "gameID"})
 away_key = last[['teams.away.team.id', 'gamePk']].rename(columns = {"teams.away.team.id": "teamID", "gamePk": "gameID"})
 last_game = pd.concat([home_key, away_key]).sort_values('gameID', ascending = False).drop_duplicates(subset = ["teamID"], keep = "first").set_index("teamID")
+last_game_dict = last_game.to_dict() #setup last game table as a dictionary
